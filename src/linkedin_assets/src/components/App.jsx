@@ -3,7 +3,8 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Header from "./Header"
 import Home from "./Home"
 
-export default function App(){
+export default function App(props){
+    console.log(props);
     return(
         <BrowserRouter>
             <Header />

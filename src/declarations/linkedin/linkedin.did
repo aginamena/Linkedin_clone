@@ -1,2 +1,9 @@
+type MyProfile = 
+ record {
+   firstName: text;
+   lastName: text;
+   title: text;
+ };
 service : {
+  getUserInfo: () -> (opt MyProfile) query;
 }
